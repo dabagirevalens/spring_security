@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.UUID;
 
 import static javax.persistence.GenerationType.AUTO;
 
@@ -19,7 +20,7 @@ import static javax.persistence.GenerationType.AUTO;
 public class User {
     @Id
     @GeneratedValue(strategy = AUTO)
-    private Long id;
+    private UUID id;
     private String name;
     private String username;
     private String password;

@@ -8,6 +8,8 @@ package com.example.security.models;
         import javax.persistence.GeneratedValue;
         import javax.persistence.Id;
 
+        import java.util.UUID;
+
         import static javax.persistence.GenerationType.AUTO;
 
 @Entity
@@ -17,7 +19,7 @@ package com.example.security.models;
 public class Role {
     @Id
     @GeneratedValue(strategy = AUTO)
-    private Long id;
+    private UUID id;
     private String name;
 
     public Role(String role_user) {

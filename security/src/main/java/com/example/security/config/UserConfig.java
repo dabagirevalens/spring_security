@@ -40,6 +40,8 @@ public class UserConfig {
 
             userService.addRoleToUser("david", "ROLE_USER");
             userService.addRoleToUser("dabagire", "ROLE_SUPER_ADMIN");
+            userService.addRoleToUser("david", "ROLE_MANAGER");
+            userService.addRoleToUser("dabagire", "ROLE_ADMIN");
         };
     }
 
